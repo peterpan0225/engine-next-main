@@ -101,14 +101,7 @@ function HomePage({
               ))}
           </section>
         </InfiniteScroll>
-        {/* <section className="container mx-auto md:px-4">
-          {!!categoryList?.length &&
-            categoryList
-              .filter(Boolean)
-              .map((category) => (
-                <CategoryBlock key={category.databaseId} {...category} />
-              ))}
-        </section> */}
+
       </Layout>
     </BuildInfo>
   );
