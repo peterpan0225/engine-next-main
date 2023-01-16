@@ -126,6 +126,7 @@ export async function getStaticProps({ params: { slug: slugArray } }) {
     revalidate: 86400, // In seconds
   };
 }
+
 export async function getStaticPaths() {
   const categoryUrls =
     (await getCategorySitemap({
