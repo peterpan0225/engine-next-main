@@ -54,7 +54,35 @@ export default function SearchPage({ sidebarPosts }) {
         <meta name="twitter:description" content="Search page" />
       </Head>
       <section className="container mx-auto px-4 flex flex-wrap lg:flex-nowrap lg:space-x-8 py-6 md:py-8">
-        
+        <main className="w-full lg:w-3/5 flex flex-col space-y-5 ">
+          <div className="text hidden md:block font-semibold text-3xl mb-4">
+            <h1>
+              Results Found -{" "}
+              <span className="text-dynamic-red">{searchText}</span>
+            </h1>
+          </div>
+          <div className="search-box flex shadow-md overflow-hidden">
+            <input
+              type="text"
+              placeholder="Enter your search keywords"
+              className="rounded-l border w-full px-2"
+              value={searchText}
+              onChange={(e) => setSearchText(e.target.value)}
+            />
+            <button
+              onClick={searchNewPosts}
+              disabled={loading}
+              className={`bg-black text-white px-4 md:px-6 py-2.5 ${
+                loading ? "bg-gray-600 cursor-not-allowed" : ""
+              }`}
+            >
+              {loading ? "Searching.." : "Search"}
+            </button>
+          </div>
+          <p className="text-gray-400 mt-2 sr-only">
+            If you're not happy with the results, please do another search.
+          </p>
+        </main>
       </section>
       <section className="container mx-auto px-4 flex flex-wrap lg:flex-nowrap lg:space-x-8 py-6 md:py-8">
         <main className="w-full lg:w-3/5 flex flex-col space-y-5 ">
