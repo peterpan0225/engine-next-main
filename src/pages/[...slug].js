@@ -66,7 +66,13 @@ export async function getStaticProps({ params: { slug: slugArray } }) {
     timeTook: executionEnd,
     type: "generating",
   });
-  
+  const data = {
+    postDetails,
+    postType: "post",
+    timeTook: executionEnd,
+    time: executionStart.toString(),
+    key: slug.join("-"),
+  };
 
   return {
     props: data, // will be passed to the page component as props
