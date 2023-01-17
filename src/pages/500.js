@@ -17,7 +17,7 @@ export default function PageNotFound() {
           name="og:description"
           content="Grow your business with Dynamic Business"
         />
-        {/* Twitter seo tags */}
+  
         <meta
           name="twitter:title"
           content="Page not found - Dynamic Business"
@@ -27,7 +27,7 @@ export default function PageNotFound() {
           content="Grow your business with Dynamic Business"
         />
       </Head>
-      {/* <div dangerouslySetInnerHTML={{ __html: postContent.outerHTML }}></div> */}
+
 
       <div className="container mx-auto md:px-4 py-8 md:py-16">
         <div className="content text-center">
