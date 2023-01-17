@@ -34,9 +34,7 @@ export default function PageNotFound() {
           <h1 className="font-bold text-3xl md:text-5xl">
             Ooops... Something’s Missing
           </h1>
-          <p className="mt-2">
-            {`Sorry, but the page you are looking for doesn't exist.`}
-          </p>
+          
           <div className="relative max-w-md mx-auto mt-4">
             <FeaturedImage
               src="/images/arabica-1084 1.png"
